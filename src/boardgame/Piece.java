@@ -15,7 +15,7 @@ public  abstract class Piece {
         return board;
     }
 
-    protected abstract boolean[][] possibleMoves();
+    public abstract boolean[][] possibleMoves();
 
     public boolean possibleMoves(Position position){
         return  possibleMoves()[position.getRow()][position.getColumn()];
