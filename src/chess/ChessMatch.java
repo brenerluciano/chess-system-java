@@ -90,7 +90,7 @@ public class ChessMatch {
             throw new IllformedLocaleException("There is no piece to be promoted");
         }
         if(!type.equals("B") && !type.equals("N") && !type.equals("R") & !type.equals("Q")){
-            throw new IllformedLocaleException("Invalid type for promoted");
+            return promoted;
         }
 
         Position pos = promoted.getChessPosition().toPosition();
